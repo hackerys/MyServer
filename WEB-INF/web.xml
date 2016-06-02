@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servletSSL</servlet-name>
+    <servlet-class>com.my.test.servletSSL</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FileUpLoad</servlet-name>
+    <servlet-class>com.my.test.FileUpLoad</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>JsonParams</servlet-name>
+    <servlet-class>com.my.test.JsonParams</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FileDownLoadServlet</servlet-name>
+    <servlet-class>com.my.test.FileDownLoadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>com.my.test.UpdateServlet</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>servletSSL</servlet-name>
+    <url-pattern>/servlet/servletSSL</url-pattern>
+  </servlet-mapping>	
+    <servlet-mapping>
+    <servlet-name>FileUpLoad</servlet-name>
+    <url-pattern>/servlet/FileUpLoad</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JsonParams</servlet-name>
+    <url-pattern>/servlet/JsonParams</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileDownLoadServlet</servlet-name>
+    <url-pattern>/servlet/FileDownLoadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/servlet/UpdateServlet</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
